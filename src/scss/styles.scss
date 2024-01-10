@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Rubik', sans-serif;
+}
+
+.header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    background: rgb(235, 120, 255);
+    background: linear-gradient(90deg, rgba(235, 120, 255, 1) 0%, rgba(65, 180, 255, 1) 74%, rgba(90, 250, 111, 1) 100%);
+    color: #ffffff;
+
+    &__logo-container {
+        display: flex;
+        align-items: center;
+
+    }
+
+    &__logo {
+        width: 50px;
+    }
+
+    &__search {
+
+        &-form {
+            display: flex;
+            // width: 300px;
+        }
+
+        &-input {
+            width: 300px;
+            padding: 13px 15px;
+            border-radius: 20px;
+            border: none;
+            position: relative;
+
+            &:focus {
+                outline: none;
+            }
+        }
+
+        &-logo-container {
+            width: 47px;
+            border-radius: 50%;
+            background: #ffffff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            right: 50px;
+            height: 41px;
+            border: none;
+        }
+
+        &-logo-btn {
+            color: #000000;
+        }
+    }
+}
+
+.main {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    // gap: 5px;
+
+    &__img_container {
+        margin: 20px;
+        padding: 10px;
+        border: 2px solid rgb(160, 157, 157);
+        display: flex;
+        flex-direction: column;
+        border-radius: 10px;
+        gap: 10px;
+        // overflow: hidden;
+
+    }
+
+    &__img {
+        width: 350px;
+        height: 200px;
+        object-fit: cover;
+        border-radius: 10px;
+    }
+
+    &__img_btn {
+        padding: 20px;
+        color: white;
+        // background: rgb(235, 120, 255);
+        // background: linear-gradient(90deg, rgba(235, 120, 255, 1) 0%, rgba(65, 180, 255, 1) 74%, rgba(90, 250, 111, 1) 100%);
+        background: rgba(65, 180, 255, 1);
+        border: none;
+        border-radius: 10px;
+        transition: all 0.7s ease-out;
+
+        &:hover {
+            margin-right: 50%;
+        }
+
+    }
+}
