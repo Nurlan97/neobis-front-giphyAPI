@@ -7,7 +7,7 @@ const onDOMContentLoaded = (event) => {
     form.addEventListener('submit', async (event) => {
         event.preventDefault();
 
-        let url = `https://api.giphy.com/v1/gifs/search?api_key=${APIKEY}&limit=20&q=`;
+        let url = `https://api.giphy.com/v1/gifs/search?api_key=${APIKEY}&limit=50&q=`;
 
         const user_input = document.querySelector('.header__search-input').value.trim();
         url = url.concat(user_input);
@@ -71,7 +71,7 @@ const onDOMContentLoaded = (event) => {
                         const fetched_url = document.createElement('a');
                         fetched_url.textContent = gif.url;
                         img_container.replaceChild(fetched_url, img_btn);
-                        
+
                         
                     })
                 })
